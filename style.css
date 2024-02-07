@@ -76,21 +76,12 @@ header.sticky .navigation li a:hover,
 
 .main {
   width: 100vw;
-  height: 80vh;
   text-align: center;
-}
-
-.main .my-image img {
-  width: clamp(250px, 300px, 350px);
-  opacity: 0.5;
-  border-radius: 50% 20%;
 }
 
 .content-main {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  padding-top: 13%;
 }
 
 .text-main h1 {
@@ -98,15 +89,29 @@ header.sticky .navigation li a:hover,
   margin-bottom: 12px; 
 }
 
-
-
 .text-main,
 .my-image {
+  width: 50%;
   padding: 0px 20px;
 }
 
-button {
-  background-color: #007bff;
+.main .my-image img {
+  width: clamp(250px, 275px, 300px);
+  opacity: 0.5;
+  border-radius: 50% 20%;
+  border-bottom: 4px solid #9343fe;
+  border-top: 4px solid #065cfa;
+  cursor: pointer;
+  transition: border-color 0.3s; /* Adiciona transição para suavizar a animação */
+
+}
+
+.main .my-image img:hover {
+  border-color:#6f00ff;
+}
+
+button.btn {
+  background-color: #6c00fa;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -115,11 +120,11 @@ button {
   font-size: 16px;
 }
 
-button:hover {
-  background-color: #0056b3;
+button.btn:hover {
+  background-color: #4b04a8;
 }
 
-button a {
+button.btn a {
   color: white;
   text-decoration: none;
 }
@@ -197,24 +202,6 @@ button a {
 
 /*ANIMAÇÂO*/
 
-[data-anime] {
-  opacity: 0;
-  transition: 0.5s ease;
-}
-
-[data-anime="left"] {
-  transform: translate3d(-50px, 0, 0);
-}
-
-[data-anime="right"] {
-  transform: translate3d(50px, 0, 0);
-}
-
-[data-anime].animate {
-  opacity: 1;
-  transform: translate3d(0px, 0px, 0px);
-}
-
 .bi-bug {
   font-size: 2em;
   color: #a6a7ab9a;
@@ -224,11 +211,19 @@ button a {
   animation: move 0.8s infinite alternate;
 }
 
+.bi-bug:hover{
+  color: #3ef53e9d;
+}
+
 .bi-filetype-js {
   color: #a6a7ab94;
   position: absolute;
   left: 20%;
-  top: 45%;
+  top: 30%;
+}
+
+.bi-filetype-js:hover{
+  color: #ff7b00de;
 }
 
 @keyframes move {
@@ -363,6 +358,7 @@ button a {
 #contact .cards .card a:hover,
 .links-contact li a:hover {
   color: #9443fe80;
+  transition:  .3s ease;
 }
 
 #contact {
@@ -386,5 +382,5 @@ footer .links-contact ul li {
 }
 
 footer .links-contact ul li a {
-  color: #fff;
+  color: #e4e2e2;
 }
