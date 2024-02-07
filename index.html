@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mobile.css" />
-    <script src="/javascript/script.js" defer></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
     <link
@@ -30,25 +30,23 @@
           <li><a href="#projects"onclick="toggleMenu()">Projetos</a></li>
           <li><a href="#contact"onclick="toggleMenu()">Contatos</a></li>
       </ul>
+
     </header>
-    <section class="main" id="banner">
-      <i class="bi bi-filetype-js"></i>
-      <div class="title-main">
-        <h1>Olá, meu nome é <span class="colorDest">Larissa Emily</span></h1>
-        <p>Estudante de Análise e Desenvolvimento de Sistemas e Front-End.</p>
-        <div class="btn">
+    <section class="main">
+      <div class="content-main">
+        <div class="text-main">
+          <h1>Olá, meu nome é Larissa Emily</h1>
+          <h5>Sou desenvolvedora Front-End</h5>
           <button><a href="./meuCV.pdf" download>Download CV</a></button>
+        </div>
+        <div class="my-image">
+          <img src="/images/perfil.jpeg" alt="my-image">
+        </div>
       </div>
-      </div>
-      <i class="bi bi-bug"></i>     
     </section>
     <section id="about-me">
-      <div class="perfil" >
-        <div class="imagePerfil" data-anime="left">
-          <img src="/images/perfil.jpeg" />
-        </div>
         <div class="about" data-anime="right">
-          <h2>Sobre Mim</h2>
+          <h1>Sobre Mim</h1>
           <div class="about-container">
             <div class="about-container-one">
               <p><i class="bi bi-award-fill"></i></p>
@@ -66,10 +64,7 @@
           
           <p class="about-text">Estou disposta a enfrentar novos desafios, e contribuir com meus conhecimentos e entusiasmo, para a equipe.
             Sou uma pessoa responsável, dedicada, possuo facilidade em aprender novas coisas, viso o crescimento continuo.</p>
-        
-
         </div>
-      </div>
     </section>
     <section id="knowledge">
       <h1>Conhecimentos</h1>
@@ -77,19 +72,21 @@
         <div class="knowledge-technology">
           <h3>Frontend Development</h3>
           <ul>
-            <li><i class="bi bi-check-circle-fill"></i> <p>HTML</p></li>
-            <li><i class="bi bi-check-circle-fill"></i> <p>CSS</p></li>
-            <li><i class="bi bi-check-circle-fill"></i> <p>JAVASCRIPT</p></li>
-            <li><i class="bi bi-check-circle-fill"></i> <p>SQL</p></li>
+            <li><i class="bi bi-check-circle-fill"></i> <p>HTML - INTERMEDIÁRIO</p></li>
+            <li><i class="bi bi-check-circle-fill"></i> <p>CSS - INTERMEDIÁRIO</p></li>
+            <li><i class="bi bi-check-circle-fill"></i> <p>JAVASCRIPT - INTERMEDIÁRIO</p></li>
+            <li><i class="bi bi-check-circle-fill"></i> <p>REACT - BÁSICO</p></li>
+            <li><i class="bi bi-check-circle-fill"></i> <p>SQL - BÁSICO</p></li>
           </ul>
         </div>
         <div class="other-knowledges">
-          <h3>Outros</h3>
+          <h3>Outros Cursos</h3>
           <ul>
             <li><i class="bi bi-check-circle-fill"></i> <p>GIT</p></li>
             <li><i class="bi bi-check-circle-fill"></i> <p>GITHUB</p></li>
             <li><i class="bi bi-check-circle-fill"></i> <p>INTRODUÇÃO A REDES</p></li>
             <li><i class="bi bi-check-circle-fill"></i> <p>MODELAGEM DE DADOS</p></li>
+            <li><i class="bi bi-check-circle-fill"></i> <p>ANALISTA DE INFORMÁTICA BÁSICA</p></li>
           </ul>
         </div>
       </div>
@@ -127,9 +124,6 @@
         <h3>Tem muito mais no meu Github <i class="bi bi-arrow-down-short"></i></h3>
       </div>
     </section>
-
-
-
     <section id="contact">
       <div class="cards">
         <div class="card">
@@ -156,7 +150,6 @@
       </div>
     </div>
     </section>
-
     <footer>
       <div class="links-contact">
         <ul>

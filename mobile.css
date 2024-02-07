@@ -1,4 +1,11 @@
-@media (max-width: 690px) {
+@media (min-width: 860px) {
+  .content-main {
+    padding-top: 20%;
+  }
+  
+}
+
+@media (max-width: 860px) {
   .menuToggle {
     display: block;
   }
@@ -8,33 +15,21 @@
   header .navigation {
     display: none;
   }
-  .main {
-    height: 75vh;
-  }
-  .title-main h1 {
-    font-size: 2.5em;
-  }
-  .perfil {
+  .content-main {
     display: block;
   }
-  .image,
-  .about {
-    width: 100%;
+  .text-main,
+  .my-image {
+    margin: 50px;
   }
-  .about {
-    margin: 70px;
+  .main {
+    height: 100vh;
   }
-
-  .image img {
-    width: 80%;
+}
+@media (max-width: 690px) {
+  .content-main {
+    padding-top: 35%;
   }
-  .title-main {
-    padding-top: 50%;
-  }
-  .image img {
-    width: 250px;
-  }
-
   .imagesProjects .image,
   .imagesProjects .descrition {
     width: 350px;
@@ -44,15 +39,4 @@
   .other-knowledges {
     width: clamp(350px, 350px, 600px);
   }
-  .about-container-one,
-.about-container-two {
-  width: 280px;
-  margin: 25px 0px;
 }
-.about-container {
-  display: block;
-}
-
-}
-
-

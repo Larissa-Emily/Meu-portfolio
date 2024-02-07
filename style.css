@@ -25,7 +25,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 100px;
+  padding: 50px 100px;
   z-index: 999;
   display: flex;
   justify-content: center;
@@ -35,7 +35,7 @@ header {
 
 header.sticky {
   background: #02081b;
-  padding: 20px 100px;
+  padding: 40px 100px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
@@ -76,63 +76,72 @@ header.sticky .navigation li a:hover,
 
 .main {
   width: 100vw;
-  height: 100vh;
-  background: linear-gradient(#020618dc, #020618ef), url(/images/banner1.jpg);
-  background-size: cover;
-}
-
-.colorDest {
-  color: #9343fe;
-}
-
-.title-main {
-  padding-top: 20%;
+  height: 80vh;
   text-align: center;
-  align-items: center;
 }
 
-.title-main h1 {
-  font-size: 3em;
-}
-
-.title-main p,
-.links-contact {
-  margin: 2%;
-}
-
-#about-me {
-  padding-top: 100px;
-}
-
-.perfil {
-  display: flex;
-  text-align: center;
-  padding: 30px 0px;
-}
-
-.imagePerfil,
-.about {
-  min-width: 50%;
-}
-
-.imagePerfil img {
-  width: 300px;
+.main .my-image img {
+  width: clamp(250px, 300px, 350px);
   opacity: 0.5;
   border-radius: 50% 20%;
 }
 
-.about {
-  text-align: left;
-  line-height: 25px;
-  color: #a6a7ab;
+.content-main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 13%;
 }
 
-.about h2 {
+.text-main h1 {
+  font-size: 2.5em;
+  margin-bottom: 12px; 
+}
+
+
+
+.text-main,
+.my-image {
+  padding: 0px 20px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+/* Sobre */
+#about-me {
+  padding-top: 100px;
+}
+
+.about {
+  width: 100%;
+  line-height: 25px;
+  color: #a6a7ab;
+  text-align: center;
+}
+
+.about h1 {
   padding: 20px 0px;
 }
 
 .about-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   text-align: center;
 }
@@ -146,7 +155,8 @@ header.sticky .navigation li a:hover,
 }
 
 .about-container-one,
-.about-container-two {
+.about-container-two,
+.about-container-three {
   width: 300px;
   padding: 20px;
   border: 1px solid #a6a7ab;
@@ -155,8 +165,10 @@ header.sticky .navigation li a:hover,
 }
 
 .about .about-text {
-  max-width: 80%;
-  margin-top: 15px;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: center;
 }
 
 .about .contacts ul li {
@@ -203,13 +215,6 @@ header.sticky .navigation li a:hover,
   transform: translate3d(0px, 0px, 0px);
 }
 
-.bi-caret-down {
-  position: absolute;
-  font-size: 2em;
-  color: #6c00fa;
-  /* animation: move .8s infinite alternate; */
-}
-
 .bi-bug {
   font-size: 2em;
   color: #a6a7ab9a;
@@ -224,7 +229,6 @@ header.sticky .navigation li a:hover,
   position: absolute;
   left: 20%;
   top: 45%;
-  /* animation: move .8s infinite alternate; */
 }
 
 @keyframes move {
@@ -334,8 +338,8 @@ header.sticky .navigation li a:hover,
   width: 250px;
   padding: 20px;
   margin-top: 10px;
-  background: #fff;
-  color: #494949;
+  background: #f7f7f7;
+  color: #252525;
   border-radius: 10px;
   border-bottom: 3px solid #6c00fa;
   text-align: center;
@@ -350,8 +354,8 @@ header.sticky .navigation li a:hover,
 
 #contact .cards .card p,
 #contact .cards .card a {
-  color: #9343fe;
-
+  color: #4b04a8;
+  font-weight: 500;
   cursor: pointer;
 }
 
@@ -377,8 +381,8 @@ footer .links-contact ul {
 }
 
 footer .links-contact ul li {
-  margin-left: 2%;
-  font-size: 1.3em;
+  margin: 20px;
+  font-size: 1.5em;
 }
 
 footer .links-contact ul li a {
