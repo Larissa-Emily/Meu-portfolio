@@ -19,18 +19,35 @@
     <title>Meu portifolio</title>
   </head>
   <body>
-    <header>
+    <!-- <header>
       <div class="menuToggle" onclick="toggleMenu()">
         <i class="bi bi-list"></i>
       </div>
-      <ul class="navigation">
-          <li><a href="#banner"onclick="toggleMenu()">Home</a></li>
-          <li><a href="#about-me"onclick="toggleMenu()">Sobre mim</a></li>
-          <li><a href="#knowledge"onclick="toggleMenu()">Conhecimento</a></li>
-          <li><a href="#projects"onclick="toggleMenu()">Projetos</a></li>
-          <li><a href="#contact"onclick="toggleMenu()">Contatos</a></li>
-      </ul>
+      <div class="nav">
+        <i class="bi bi-x"></i>
+        <ul>
+          <li><a href="#banner">Home</a></li>
+          <li><a href="#about-me">Sobre mim</a></li>
+          <li><a href="#knowledge">Conhecimento</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contatos</a></li>
+        </ul>
+      </div>
+    </header> -->
 
+    <header>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="bi bi-list"></i>
+      </div>
+      <div class="nav">
+        <ul class="top-nav">
+          <li><a href="#banner">Home</a></li>
+          <li><a href="#about-me">Sobre mim</a></li>
+          <li><a href="#knowledge">Conhecimento</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contatos</a></li>
+        </ul>
+      </div>
     </header>
     <section class="main" id="banner">
       <div class="content-main">
@@ -41,7 +58,7 @@
           <button class="btn"><a href="./meuCV.pdf" download>Download CV</a></button>
         </div>
         <div class="my-image">
-          <a href="https://github.com/Larissa-Emily"><img src="/images/perfil.jpeg" alt="my-image"></a>
+          <a href="https://github.com/Larissa-Emily"><img src="/images/perfil.jpg" alt="my-image"></a>
         </div>
       </div>
       <i class="bi bi-bug"></i>
@@ -100,29 +117,57 @@
       <h1>Projetos</h1>
       <div class="projects-container">
         <div class="project">
-          <img src="./images/pj1.png">
-          <h3>Site cafeteria</h3>
-          <div class="links-projects">
-            <button><a href="https://github.com/Larissa-Emily/cafeteria">GitHub</a></button>
-
-            <button>Ver</button>
-          </div>
-        </div>
-        
-        <div class="project">
           <img src="./images/pj2.png">
           <h3>Quiz App</h3>
+          <span>Html - Css - JavaScript</span>
           <div class="links-projects">
             <button><a href="https://github.com/Larissa-Emily/Quiz-APP">GitHub</a></button>
-            <button><a href="https://larissa-emily.github.io/Quiz-APP/">Ver</a></button>
+            <button class="view"><a href="https://larissa-emily.github.io/Quiz-APP/">Ver</a></button>
           </div>
         </div>
         <div class="project">
           <img src="./images/pj3.png">
           <h3>Controle financeiro</h3>
+          <span>Html - Css - JavaScript</span>
           <div class="links-projects">
             <button><a href="https://github.com/Larissa-Emily/web_Banco">GitHub</a></button>
-            <button>Ver</button>
+            <button class="view">Ver</button>
+          </div>
+        </div>
+        <div class="project">
+          <img src="./images/costs.png">
+          <h3>Gerenciador de projetos</h3>
+          <span>Html - Css - React</span>
+          <div class="links-projects">
+            <button><a href="https://github.com/Larissa-Emily/Gerenciador-de-projetos">GitHub</a></button>
+            <button class="view">Desenvolvendo</button>
+          </div>
+        </div>
+        <div class="project">
+          <img src="./images/petShop.png">
+          <h3>Pet shop</h3>
+          <span>Html - Css - JavaScript</span>
+          <div class="links-projects">
+            <button><a href="https://github.com/Larissa-Emily/petShop">GitHub</a></button>
+            <button class="view">Desenvolvendo</button>
+          </div>
+        </div>
+        <div class="project">
+          <img src="./images/pets.png">
+          <h3>API de imagens</h3>
+          <span>Html - Css - JavaScript</span>
+          <div class="links-projects">
+            <button><a href="https://github.com/Larissa-Emily/galeria-de-pets">GitHub</a></button>
+            <button class="view"><a href="https://larissa-emily.github.io/galeria-de-pets/">Ver</a></button>
+          </div>
+        </div>
+        <div class="project">
+          <img src="./images/calc.png">
+          <h3>Calculadora simples</h3>
+          <span>Html - Css - JavaScript</span>
+          <div class="links-projects">
+            <button><a href="https://github.com/Larissa-Emily/Calculadora">GitHub</a></button>
+            <button class="view"><a href="https://larissa-emily.github.io/Calculadora/">Ver</a></button>
           </div>
         </div>
       </div>

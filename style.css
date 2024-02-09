@@ -21,57 +21,64 @@ footer {
 }
 
 header {
+  width: 100vw;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 50px 100px;
   z-index: 999;
+  background-color: #02081b;
+  padding: 40px 20px;
+  text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center;
-  transition: 0.5s;
 }
 
-header.sticky {
-  background: #02081b;
-  padding: 40px 100px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+.menu-toggle {
+  color: #9343fe;
+  font-size: 2.5em;
+  display: none; /* Oculta o menu hambúrguer por padrão */
 }
 
-header .navigation {
-  position: relative;
+.top-nav {
   display: flex;
+  list-style-type: none;
+  font-size: 1.3em;
   text-transform: uppercase;
 }
 
-header .navigation li {
-  list-style: none;
-  margin-left: 30px;
+.top-nav li {
+  margin-right: 20px;
 }
 
-header .navigation li a {
+.top-nav a {
   text-decoration: none;
   color: #fff;
-  font-weight: 300;
 }
 
-header.sticky .navigation li a {
-  color: #fff;
-}
-
-header.sticky .navigation li a:hover,
-.navigation li a:hover {
+.top-nav a:hover {
   color: #9343fe;
-  border-bottom: 2px solid #9343fe;
 }
 
-.menuToggle {
-  display: none;
-}
-.menuToggle i {
-  font-size: 2.5em;
-  color: #9343fe;
+/* Estilo do menu hambúrguer */
+@media only screen and (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  .top-nav {
+    display: none; /* Esconde a lista de navegação em telas menores */
+  }
+
+  .menu-toggle {
+    display: block; /* Mostra o menu hambúrguer em telas menores */
+    cursor: pointer;
+  }
+
+  .nav.active .top-nav {
+    margin: 0 auto;
+    display: block; /* Mostra a lista de navegação ao abrir o menu hambúrguer */
+  }
+  .nav.active .top-nav li {
+    padding: 10px;
+  }
 }
 
 .main {
@@ -86,7 +93,7 @@ header.sticky .navigation li a:hover,
 
 .text-main h1 {
   font-size: 2.5em;
-  margin-bottom: 12px; 
+  margin-bottom: 12px;
 }
 
 .text-main,
@@ -103,11 +110,10 @@ header.sticky .navigation li a:hover,
   border-top: 4px solid #065cfa;
   cursor: pointer;
   transition: border-color 0.3s; /* Adiciona transição para suavizar a animação */
-
 }
 
 .main .my-image img:hover {
-  border-color:#6f00ff;
+  border-color: #6f00ff;
 }
 
 button.btn {
@@ -211,7 +217,7 @@ button.btn a {
   animation: move 0.8s infinite alternate;
 }
 
-.bi-bug:hover{
+.bi-bug:hover {
   color: #3ef53e9d;
 }
 
@@ -222,7 +228,7 @@ button.btn a {
   top: 30%;
 }
 
-.bi-filetype-js:hover{
+.bi-filetype-js:hover {
   color: #ff7b00de;
 }
 
@@ -313,7 +319,14 @@ button.btn a {
   border: none;
 }
 
-.project .links-projects button:hover {
+.project .links-projects button,
+.project .links-projects button a{
+  font-weight: 500;
+
+}
+
+.project .links-projects button:hover,
+.view{
   background-color: #9343fe;
   color: #fff;
 }
@@ -347,6 +360,10 @@ button.btn a {
   color: #9343fe;
 }
 
+#contact .cards .card .header span{
+  font-weight: 500;
+}
+
 #contact .cards .card p,
 #contact .cards .card a {
   color: #4b04a8;
@@ -358,7 +375,7 @@ button.btn a {
 #contact .cards .card a:hover,
 .links-contact li a:hover {
   color: #9443fe80;
-  transition:  .3s ease;
+  transition: 0.3s ease;
 }
 
 #contact {
